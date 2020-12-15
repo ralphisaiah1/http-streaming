@@ -51,7 +51,8 @@ const options = {
     defaults.worker = worker({plugins: [
       defaults.resolve,
       defaults.json,
-      defaults.commonjs
+      defaults.commonjs,
+      defaults.babel
     ]});
 
     return defaults;
