@@ -20,8 +20,7 @@ const options = {
         'm3u8-parser',
         'mpd-parser',
         'mux.js',
-        '@videojs/vhs-utils',
-        'rollup-plugin-worker-factory'
+        '@videojs/vhs-utils'
       ])
     });
   },
@@ -48,7 +47,7 @@ const options = {
       createTestData: createTestData()
     });
 
-    defaults.worker = worker({plugins: [
+    defaults.worker = worker({type: 'browser', plugins: [
       defaults.resolve,
       defaults.json,
       defaults.commonjs,
